@@ -1,0 +1,35 @@
+@media(min-width:768px){
+    .desktop{
+        display:none;
+    }
+
+    .mainmobile{
+        display: none;
+    }
+
+    .mobile{
+        display: none;
+    }
+
+    .mainobrassegmq{
+        display:inline-block;
+    }
+
+    .mta{
+        margin-top: 40px;
+    }
+
+    .subcv{
+        margin-top: 20px;
+    }
+
+    header{
+        margin-bottom: 15px;
+    }
+
+    .footerdesktop{
+        display: none;
+    }
+
+}
+
