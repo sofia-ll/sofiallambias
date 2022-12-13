@@ -36,6 +36,7 @@
         transition-duration: 1.5s;
         border-radius: 10px;
     }
+
     
     .padd{
         padding-left: 60px;
@@ -48,15 +49,31 @@
         border-radius: 10px;
         word-spacing: 5px;
     }
+
+    // sacar?
+    h1 a {
+        font-size: 20px;
+        color: $color;
+        font-weight: lighter;
+        height: 50px;
+    }
     
+    nav .desktop{
+        padding: 20px;
+    }
 
     nav ul {
         margin: 40px;
             li {
         display: inline;
-        padding: 2px 2px 0px 2px;
-        margin: 5px;;
+        padding: 2px 2px 0px 0px;
+        margin: 0px;;
                 }
+    }
+
+    nav li {
+        padding: 10px;
+        text-align: center;
     }
     
     .h1{
@@ -89,7 +106,7 @@
         grid-template-areas:
         "h1 inicionav cvnav obrasnav muestrasnav contactonav";
         gap: 5px;
-        grid-template-columns: 30% auto auto auto auto auto;
+        grid-template-columns: 30% 1fr 1fr 1fr 1fr 1fr;
         grid-template-rows: auto;
         height: 40px;
         margin: 0;
@@ -107,15 +124,22 @@
     
     .subtitulo {
         font-family: 'Montserrat', sans-serif;
-        height: 40px;
+        height: 60px;
         letter-spacing: 4px;
-        font-weight: lighter;
         padding: 2px 2px 0px 2px;
         text-align: center;
         border-radius: 10px;
         width: 100%;
-        margin-top: 20px;
-        background-color: rgba(154, 136, 124, 0.107);
+        margin-top: 10px;
+        margin-bottom: 2px;
+        background-color: $colorsubt;
+        font-weight: 200px;
+        font-size: 50px;
+        color: white;
+    }
+
+    h2{
+        padding: 10px
     }
     
     .licv{
@@ -146,7 +170,17 @@
 
     .imgcard{
         height: 500px;
+        margin-top: 0;
     } 
+
+    .fino{
+        height: 20px;
+        margin-bottom: 10px;
+    }
+
+    .finoabajo{
+        margin-bottom: 0;
+    }
 
 /* galeria de imagenes obras */
         
@@ -275,5 +309,36 @@
         display: none;
     }
 
-}
+    // muestras
+
+    .video{
+        width: 100%;
+    }
+
+    .iframe{
+        text-align: center;
+        height:100%;
+    }
+
+    .muestrasPapa{
+        margin-top: 20px;
+    }
+
+    .m ul{
+        height: 700px;
+        background-color:white;
+    }
+
+    .video{
+        height: 500px;
+    }
+
+    caption{
+        height: 50px;
+    }
+
+    .bm{
+        background-color:white;
+    }
+    }
 
