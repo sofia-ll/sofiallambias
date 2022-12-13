@@ -131,7 +131,6 @@
         margin-top: 10px;
         margin-bottom: 15px;
         background-color: $colorsubt;
-        font-weight: 200px;
         font-size: 50px;
         color: white;
     }
@@ -266,39 +265,35 @@
 
      // contacto
 
-    
-    .contacto article h3 {
-        text-align: center;
-    }
-    
     .contacto {
     display: flex;
     flex-direction: column;
     text-align: center;
-    border-radius: 500px;
     margin-top: 10px;
-    background-color: rgba(255, 255, 0, 0.511);
-    justify-content: center
+    border-radius: 10px;
+    background-image: url(../img/foto_contacto.jpg);
+    background-size: cover;
+    justify-content: space-between;
+    margin-bottom: 15px;
     }
     
+    .consulta{
+        background-color: rgba(255, 255, 48, 0.726);
+    }
+
     .datos_contacto{
         margin-top: 60px;
         margin-bottom: 20px;
     }
     
     .datos_contacto button{
-        color: white;
-        border: 1px solid white;
         display: inline;
         padding: 20px;
-        background-color: $colorsubt;
+        background-color: rgba(255, 255, 48, 0.726);
         border-radius: 10px;
+        border: 0.2px solid $color;
     }
     
-    .mail{
-        display: block;
-    }
-
     .muestras{
         margin-left: 20px;
     }
@@ -358,7 +353,6 @@
         }
     }
 
-
     .video{
         height: 500px;
         margin-top: 10px;
@@ -372,5 +366,4 @@
         background-color:white;
     }
 
-    }
-
+}

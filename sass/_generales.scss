@@ -127,7 +127,6 @@
         align-items: center;
         justify-content: center;
         text-align: center;
-        margin-top: 20px;
     }
 
     footer .mobile a{
@@ -162,6 +161,16 @@
         background-color: rgba(154, 136, 124, 0.107);
     }
 
+    .barrasubt{
+        font-weight: 200px;
+        font-size: 50px;
+        color: white;
+        font-weight: lighter;
+        background-color: $colorsubt;
+        margin-bottom: 10px;
+        margin-top: 15px;
+    }
+
     .sections_info h2 {
         margin-bottom: 10px;
         font-weight: bolder;
@@ -171,38 +180,6 @@
         text-align: center;
     }
     
-    .contacto {
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    border-radius: 500px;
-    margin-top: 10px;
-    background-color: rgba(255, 255, 0, 0.511);
-    justify-content: center;
-    }
-    
-    .mixinUno{
-        @include size (100px, 800px);
-    }
-
-    .consulta{
-        margin-top: 30px;
-    }
-
-    .datos_contacto{
-        margin-top: 60px;
-        margin-bottom: 20px;
-    }
-    
-    .datos_contacto button{
-        color: white;
-        border: 1px solid white;
-        display: inline;
-        padding: 20px;
-        background-color: $colorsubt;
-        border-radius: 10px;
-    }
-    
     .mail{
         display: block;
     }
@@ -210,6 +187,45 @@
     .muestras{
         margin-left: 20px;
     }
+
+    .mixinUno{
+        @include size (100%, 500px);
+    }
+
+    .maincontacto{
+        height: 540px;
+        @media (min-width:576px){
+            @include size (100%, 700px);
+        }
+        @media (min-width: 768px){
+            @include size (100%, 850px);
+        }  
+        @media (min-width:1024px){
+            @include size (100%, 600px);
+        }
+    }
+
+        .contacto{
+        display: none;
+    }
+
+    .cardcontacto{
+        margin-top: 20px;
+    }
+
+    .textocardcont{
+        background-color: yellow;
+    }
+
+    .botoncont{
+        display: inline;
+        padding: 20px;
+        background-color: white;
+        border-radius: 10px;
+        border: 0.2px solid $color;
+        color:rgba(250, 77, 189, 0.823);
+    }
+
 
 
 

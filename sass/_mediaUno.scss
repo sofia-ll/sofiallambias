@@ -8,4 +8,26 @@
         background-color: $colorsubt;
     }
 
+    .imgcard{
+        height: 500px;
+        margin-top: 0;
+    } 
+
+    .fino{
+        height: 20px;
+        margin-bottom: 10px;
+    }
+
+    .finoabajo{
+        margin-bottom: 0;
+    }
+
+        .botoncont{
+        display: inline;
+        padding: 20px;
+        background-color: white;
+        border-radius: 10px;
+        border: 0.2px solid $color;
+        color:rgba(250, 77, 189, 0.823);
+    }
 }
