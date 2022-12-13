@@ -2,6 +2,7 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 a {
@@ -168,22 +169,24 @@ footer .mobile a {
 .contacto {
   display: flex;
   flex-direction: column;
-  height: 400px;
-  width: 100vw;
-  margin-top: 30px;
   text-align: center;
+  border-radius: 500px;
+  margin-top: 10px;
+  background-color: rgba(255, 255, 0, 0.511);
+  justify-content: center;
 }
 
 .datos_contacto {
   margin-top: 60px;
   margin-bottom: 20px;
 }
-.datos_contacto h2 {
+
+.datos_contacto button {
   color: white;
   border: 1px solid white;
   display: inline;
   padding: 20px;
-  background-color: rgba(0, 0, 0, 0.522);
+  background-color: rgba(250, 77, 189, 0.823);
   border-radius: 10px;
 }
 
@@ -337,7 +340,7 @@ footer .mobile a {
     border-radius: 10px;
     width: 100%;
     margin-top: 10px;
-    margin-bottom: 2px;
+    margin-bottom: 15px;
     background-color: rgba(250, 77, 189, 0.823);
     font-weight: 200px;
     font-size: 50px;
@@ -349,8 +352,8 @@ footer .mobile a {
   .licv {
     list-style: none;
   }
-  .cardscvd {
-    background-color: rgba(154, 136, 124, 0.107);
+  .c ul {
+    height: 600px;
   }
   .exlab {
     height: 439px;
@@ -358,9 +361,6 @@ footer .mobile a {
   }
   .ecl {
     height: 174px;
-  }
-  .formac {
-    height: 550px;
   }
   .cardcvdesktop {
     border-radius: 20px;
@@ -418,7 +418,7 @@ footer .mobile a {
     grid-area: redes;
   }
   .footerdesktop {
-    margin: 30px 5px 10px 5px;
+    margin: 25px 5px 10px 5px;
     display: grid;
     grid-template-areas: "inicio contacto copyr redes";
     grid-template-columns: 1fr 1fr 4fr 1fr;
@@ -454,21 +454,22 @@ footer .mobile a {
   .contacto {
     display: flex;
     flex-direction: column;
-    height: 400px;
-    width: 100vw;
-    margin-top: 30px;
     text-align: center;
+    border-radius: 500px;
+    margin-top: 10px;
+    background-color: rgba(255, 255, 0, 0.511);
+    justify-content: center;
   }
   .datos_contacto {
     margin-top: 60px;
     margin-bottom: 20px;
   }
-  .datos_contacto h2 {
+  .datos_contacto button {
     color: white;
     border: 1px solid white;
     display: inline;
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.522);
+    background-color: rgba(250, 77, 189, 0.823);
     border-radius: 10px;
   }
   .mail {
@@ -490,12 +491,29 @@ footer .mobile a {
   .muestrasPapa {
     margin-top: 20px;
   }
-  .m ul {
-    height: 700px;
+  .m1 ul {
+    height: 430px;
+    background-color: white;
+  }
+  .m2 ul {
+    height: 750px;
+    background-color: white;
+  }
+  .m3 ul {
+    height: 600px;
+    background-color: white;
+  }
+  .m4 ul {
+    height: 180px;
+    background-color: white;
+  }
+  .m5 ul {
+    height: 170px;
     background-color: white;
   }
   .video {
     height: 500px;
+    margin-top: 10px;
   }
   caption {
     height: 50px;

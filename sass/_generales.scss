@@ -1,6 +1,7 @@
     * {
         padding: 0;
         margin: 0;
+        box-sizing: border-box;
     }
     
     a {
@@ -38,7 +39,7 @@
     }
 
     header{
-        background-color: rgb(240, 237, 239);
+        background-color: $bgheaderyf;
         border-radius: 20px;
         margin-bottom: 15px;
     }
@@ -51,7 +52,7 @@
         .barrasubt{
         background-color: $colorsubt;
     }
-    
+
     .border{
         font-family: 'Montserrat', sans-serif;
         letter-spacing: 4px;
@@ -165,34 +166,44 @@
         margin-bottom: 10px;
         font-weight: bolder;
     }
-    
+
     .contacto article h3 {
         text-align: center;
     }
     
     .contacto {
     display: flex;
-    flex-direction: column;
-    height: 400px;
-    width: 100vw;
-    margin-top: 30px;
+    flex-direction: row;
     text-align: center;
+    border-radius: 500px;
+    margin-top: 10px;
+    background-color: rgba(255, 255, 0, 0.511);
+    justify-content: center;
     }
-        
+    
+    .mixinUno{
+        @include size (100px, 800px);
+    }
+
+    .consulta{
+        margin-top: 30px;
+    }
+
     .datos_contacto{
         margin-top: 60px;
         margin-bottom: 20px;
-            h2{
-                color: white;
-                border: 1px solid white;
-                display: inline;
-                padding: 20px;
-                background-color: rgba(0, 0, 0, 0.522);
-                border-radius: 10px;
-            }
     }
-
-        .mail{
+    
+    .datos_contacto button{
+        color: white;
+        border: 1px solid white;
+        display: inline;
+        padding: 20px;
+        background-color: $colorsubt;
+        border-radius: 10px;
+    }
+    
+    .mail{
         display: block;
     }
 
