@@ -257,6 +257,27 @@ footer .mobile a {
 .fino .mb {
   margin-bottom: 15px;
 }
+.fino .videopsm {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  height: 202px;
+  width: 360px;
+}
+@media (min-width: 576px) {
+  .fino .videopsm {
+    width: 560px;
+    height: 315px;
+  }
+}
+@media (min-width: 768px) {
+  .fino .videopsm {
+    width: 800px;
+    height: 450px;
+  }
+}
+.fino .m1 ul, .fino .m2 ul, .fino .m3 ul, .fino .m4 ul, .fino .m5 ul {
+  border-radius: 10px;
+}
 
 @media (min-width: 576px) {
   .bgcv {
@@ -283,6 +304,9 @@ footer .mobile a {
     border-radius: 10px;
     border: 0.2px solid rgb(86, 85, 87);
     color: rgba(250, 77, 189, 0.823);
+  }
+  .m1, .m2, .m3, .m4, .m5 {
+    width: 100%;
   }
 }
 @media (min-width: 768px) {

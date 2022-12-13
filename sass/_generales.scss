@@ -244,10 +244,22 @@
                 margin-bottom: 15px;
             }
 
+// muestras
+
+    .videopsm{
+        margin-top: 10px;
+        margin-bottom: 15px;
+        height: 202px;
+        width: 360px;
+        @media (min-width:576px){
+            @include size (560px, 315px);
         }
+        @media (min-width:768px){
+            @include size (800px, 450px);
+        }
+    }
 
-
-
-
-
-
+    .m1 ul, .m2 ul, .m3 ul, .m4 ul, .m5 ul{
+            border-radius: 10px;
+        } 
+    } 
