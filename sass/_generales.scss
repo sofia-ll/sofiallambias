@@ -35,6 +35,10 @@
         font-weight: bold;
     }
 
+    .bgcv{
+        background-color: rgba(154, 136, 124, 0.107);
+    }
+
     .logo{
         color: rgb(86, 85, 87);
         letter-spacing: 2px;
@@ -267,12 +271,12 @@
         border-radius: 10px;
     } 
 
-    .bgcv{
-        background-color: rgba(154, 136, 124, 0.107);
-    }
-
     ul li {
         padding: 0;
+    }
+
+    .cv{
+        margin-top: 20px;
     }
     
     } 

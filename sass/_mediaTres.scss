@@ -299,10 +299,6 @@
 
     // muestras
 
-    .video{
-        width: 100%;
-    }
-
     .iframe{
         text-align: center;
         height:100%;
@@ -312,21 +308,21 @@
         margin-top: 20px;
     }
 
-    .m1 {
+    .muno {
         ul{
         height: 430px;
         background-color:white;
         }
     }
 
-    .m2 {
+    .mdos {
         ul{
         height: 750px;
         background-color:white;
         }
     }
 
-    .m3 {
+    .mtres {
         ul{
         height: 600px;
         background-color:white;
@@ -334,14 +330,14 @@
     }
 
 
-    .m4 {
+    .mcuatro {
         ul{
         height: 180px;
         background-color:white;
         }
     }
 
-    .m5 {
+    .mcinco {
         ul{
         height: 170px;
         background-color:white;
@@ -349,8 +345,9 @@
     }
 
     .video{
-        height: 500px;
         margin-top: 10px;
+        width: 100%;
+        margin-bottom: 15px;
     }
 
     caption{
@@ -359,6 +356,14 @@
 
     .bm{
         background-color:white;
+    }
+
+    .centrado{
+        text-align: center;
+    }
+
+    .bgcv{
+        background-color: rgba(154, 136, 124, 0.107);
     }
 
 }
