@@ -11,9 +11,12 @@
     
     body {
         font-family: $fontfamily;
-        color: $color;
+        color: $colordos;
         font-size: $size;
-        margin: 20px 40px 20px 40px;
+        margin: 10px;
+        @media (min-width:1024px){
+            margin: 20px 40px 20px 40px;
+        }
     }
 
     .curriculum, .section_imagen_cv, .formacion, .cursos, .experiencia_laboral {
@@ -71,6 +74,7 @@
 
     .card{
         margin-bottom: $alto/4;
+        border-radius: 10px;
     }
 
     .fotoperfilcv{
@@ -260,6 +264,15 @@
     }
 
     .m1 ul, .m2 ul, .m3 ul, .m4 ul, .m5 ul{
-            border-radius: 10px;
-        } 
+        border-radius: 10px;
+    } 
+
+    .bgcv{
+        background-color: rgba(154, 136, 124, 0.107);
+    }
+
+    ul li {
+        padding: 0;
+    }
+    
     } 
