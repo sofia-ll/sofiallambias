@@ -98,21 +98,26 @@
         grid-area: contactonav;
     }
 
+    .tiendanav{
+        grid-area: tiendanav;
+    }
+
     .navdesktop{
         display: grid;
         align-items: center;
         grid-template-areas:
-        "h1 inicionav cvnav obrasnav muestrasnav contactonav";
+        "h1 inicionav cvnav obrasnav muestrasnav contactonav tiendanav";
         gap: 5px;
-        grid-template-columns: 30% 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: auto auto auto auto auto auto auto;
         grid-template-rows: auto;
         height: 40px;
         margin: 0;
         padding-left: 0;
         padding-top: 20px;
+        justify-content: space-between;
     }
 
-    header {
+    .nbdsp {
         border-radius: 20px;
         background-color: rgb(240, 237, 239);
         height: 100px;
@@ -384,4 +389,9 @@
         border-radius: 10px;
     }
 
+    .fonttype{
+        font-family: $fontfamily;
+        color: $colordos;
+        margin-right: 200px;
+    }
 }
