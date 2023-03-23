@@ -78,5 +78,6 @@ function terminarCompra(){
 function subtotal(){
     const total = carrito.reduce((acc, lamina) => acc + lamina.precio * lamina.unidades, 0).toFixed(2)
     confirm(`El total es de $ ${total}`)
+    console.log(total)
 }
 
