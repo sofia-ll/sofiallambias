@@ -36,6 +36,8 @@ function comprarLaminas(){
         }
 }
 
+let unidades = parseInt(prompt("¿Cuántas unidades querés llevar?"))
+
 function iniciarCompra() {
 
     let numeroLamina = prompt("¿Cuál es el número de la lámina que querés comprar?")
@@ -48,6 +50,7 @@ function iniciarCompra() {
     else {
         carrito.push(laminaComprada)
         alert(`La lámina ${laminaComprada.nombre} se agregó tu carrito. 😀`)
+        let unidades = parseInt(prompt("¿Cuántas unidades querés llevar?"))
         let seguir = confirm("¿Querés elegir otra lámina?")
         if(seguir) {
             iniciarCompra()
@@ -63,7 +66,6 @@ function buscarLamina(numeroLamina) {
         return busquedaLamina;
 }
 
-let unidades = parseInt(prompt("¿Cuántas unidades querés llevar?"))
 
 function terminarCompra(){
         if(carrito.length === 0){
@@ -76,7 +78,7 @@ function terminarCompra(){
             }
 
 function subtotal(){
-    const total = carrito.reduce((acc, lamina) => acc + lamina.precio * lamina.unidades, 0).toFixed(2)
+    const total = carrito.reduce((acc, lamina) => acc + lamina.precio * unidades, 0).toFixed(2)
     confirm(`El total es de $ ${total}`)
     console.log(total)
 }
